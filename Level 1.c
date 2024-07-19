@@ -35,7 +35,7 @@ void delay(uint32_t usTime) {
 
 void app_init(void) {
     USTIMER_Init();
-    pinMode("D3", "output");
+    pinMode("D3", "out");
 }
 
 void app_process_action(void) {
