@@ -20,7 +20,7 @@ void pinModify(char pin[], char action[]) { // modify pin actions
       GPIO_PinOutSet(pin[0] - 'A', pin[1] - '0');
   } else if (strcmp(action, "toggle") == 0) {
       GPIO_PinOutToggle(pin[0] - 'A', pin[1] - '0');
-  } else if (strcmp(action, "toggle") == 0) {
+  } else if (strcmp(action, "off") == 0) {
       GPIO_PinOutClear(pin[0] - 'A', pin[1] - '0');
   }
 }
